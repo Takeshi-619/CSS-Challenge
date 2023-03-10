@@ -1,10 +1,18 @@
+body {
+  margin: 5vw;
+  background-color: #001f3f COPY;
+}
 .wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
+  align-items: center;
+  column-gap: 5vw;
 }
 
 /* button1 */
 .button1 {
+  text-align: center;
   text-decoration: none;
   font: 600 2rem / 1 futura;
   padding: 0.8em 1em;
@@ -28,4 +36,21 @@
 .button1 span:active {
   display: block;
   transform: translate(4px, 4px);
+}
+
+/* button2 */
+.button2 {
+  text-align: center;
+  text-decoration: none;
+  padding: 0.8em 1em;
+
+  font: 300 2rem / 1 futura;
+  cursor: pointer;
+  border-radius: 16px;
+  background: linear-gradient(35deg, #f0f0f0, #cacaca);
+  box-shadow: 27px 27px 54px #afafaf, -27px -27px 54px #ffffff;
+}
+.button2:active {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 9px 9px 54px #afafaf, -9px -9px 54px #ffffff;
 }
