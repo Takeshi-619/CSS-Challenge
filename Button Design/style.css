@@ -54,3 +54,15 @@ body {
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 9px 9px 54px #afafaf, -9px -9px 54px #ffffff;
 }
+
+/* button3 */
+.button3 {
+  text-align: center;
+  text-decoration: none;
+  font: 600 2rem / 1 futura;
+  padding: 3.5em 1em;
+  border: 4px solid #000;
+  color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
