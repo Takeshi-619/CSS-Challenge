@@ -43,7 +43,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.8em 1em;
-
+  color: #000;
   font: 300 2rem / 1 futura;
   cursor: pointer;
   border-radius: 16px;
@@ -61,8 +61,29 @@ body {
   text-decoration: none;
   font: 600 2rem / 1 futura;
   padding: 3.5em 1em;
-  border: 4px solid #000;
   color: #000;
-  border-radius: 50%;
   cursor: pointer;
+  position: relative;
+}
+
+.button3:hover::after {
+  content: "";
+  position: absolute;
+  border: 4px solid #000;
+  border-radius: 50%;
+  inset: 0;
+  margin: auto;
+  animation: circle 1.2s ease-in-out infinite;
+}
+
+@keyframes circle {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.1;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
 }
